@@ -7,3 +7,9 @@ client.on('ready', ()=>{
 })
 
 client.login(process.env.CLIENT_TOKEN)
+
+client.on("msg", msg=>{
+  if(msg.content == "Shrek"){
+    msg.reply("OLD Dick")
+  }
+})
