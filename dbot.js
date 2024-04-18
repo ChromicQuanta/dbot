@@ -9,6 +9,7 @@ client.on('ready', ()=>{
 client.login(process.env.CLIENT_TOKEN)
 
 client.on("messageCreate", msg=>{
+  console.log("Message!")
   if(msg.content == "Shrek"){
     msg.reply("OLD Dick")
   }
